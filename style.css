@@ -76,72 +76,68 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999; /* Ensure modal appears on top */
+  z-index: 999;
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 18px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 12px;
-    cursor: pointer;
-    
-  }
-  
-  .tooltip:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    border-radius: 5px;
-    font-size: 12px;
-    white-space: nowrap;
-  }
-  /* Existing CSS styles */
-/* ... */
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
 
 .input-tooltip {
-    position: relative;
-  }
-  
-  .input-tooltip input {
-    padding-right: 30px; /* Adjust this value as needed for the tooltip icon position */
-  }
-  
-  .input-tooltip .tooltip {
-    position: absolute;
-    top: 50%;
-    right: 5px; /* Adjust this value as needed for the tooltip icon position */
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 12px;
-    cursor: pointer;
-  }
-  
-  .input-tooltip .tooltip:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-  
+  position: relative;
+}
+
+.input-tooltip input {
+  padding-right: 30px;
+}
+
+.input-tooltip .tooltip {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.input-tooltip .tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+}
